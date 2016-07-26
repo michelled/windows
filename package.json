@@ -16,11 +16,17 @@
         "grunt": "1.0.1",
         "fluid-grunt-eslint": "18.1.1",
         "grunt-jsonlint": "1.0.4",
-        "shelljs": "0.3.0"
+        "shelljs": "0.3.0",
+        "electron-prebuilt": "^0.34.0",
+        "electron-rebuild": "^1.1.2",
+        "request": "^2.69.0"
     },
     "license" : "BSD-3-Clause",
     "keywords": ["gpii", "accessibility", "settings", "fluid", "IoC", "Inversion of Control", "configuration", "evented"],
     "repository": "git://github.com/GPII/windows.git",
     "main": "./gpii.js",
+    "scripts": {
+        "start": "electron start.js"
+    },
     "engines": { "node" : ">=4.2.1" }
 }
