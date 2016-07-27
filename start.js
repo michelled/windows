@@ -94,7 +94,13 @@ var buildMenu = function () {
     return Menu.buildFromTemplate(menuTemplate);
 };
 
+var startGPII = function () {
+    console.log("Going to start the GPII");
+    require("./gpii.js");
+};
+
 app.on("ready", function () {
+    startGPII();
     console.log("Going to start the tray");
     trayIcon = new Tray(path.join(__dirname, "gpii/node_modules/WindowsUtilities/icons/gpii.ico"));
     trayIcon.setToolTip("GPII");
