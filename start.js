@@ -1,12 +1,9 @@
 "use strict";
 
+const {app, Menu, Tray} = require('electron')
 var path = require("path");
-var app = require("app");  // Module to control application life.
 var request = require("request");
-var Menu = require("menu");
-var Tray = require("tray");
-var trayIcon = null;
-
+var trayIcon;
 
 var keyIn = function (key) {
     console.log("Key in " + key);
